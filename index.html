@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Site de teste</title>
+  </head>
+
+  <body>
+    <div class="container-fluid container-main">
+      <div class="row justify-content-between">
+        <div id="container-superior" class="bg-white border-container">
+          <div class="col-11 m-5 mx-auto">
+            <div class="py-5 container-publicidade w-100 d-flex justify-content-center">
+              <p class="container-publicidade text-publicidade">PUBLICIDADE</p>
+            </div>
+          </div>
+
+          <div class="row my-4 mx-1">
+            <div class="col-5">
+              <div class="col-4 p-0">
+                <p class="container-tempo m-1 d-flex justify-content-center">TEMPO</p>
+              </div>
+
+              <p class="pt-1 text-medium">Próximos 10 dias</p>
+              <p class="text-data" id="intervalo-data">(09/03 à 18/03/2020)</p>
+
+              <div class="border-container d-flex justify-content-between align-items-center mt-5 col-6">
+                <p id="text-cidade">São Paulo - SP</p>
+                <img src="assets/localizador.svg" />
+              </div>
+            </div>
+
+            <div class="col-1 hr-vertical p-0"></div>
+
+            <div class="col-6">
+              <div class="row justify-content-between">
+                <div class="col-4 p-0">
+                  <img src="assets/sol-nuvens.svg" alt="sol com nuvens" />
+
+                  <p class="text-black-default mt-2">SEGUNDA-FEIRA</p>
+
+                  <p class="text-data">09/03/2020</p>
+                </div>
+
+                <div class="col-4 p-0">
+                  <div class="row align-items-center justify-content-center">
+                    <img src="assets/indicador-baixo.svg" alt="indicador" />
+                    <p class="text-min-max ml-2 d-flex">MIN</p>
+                  </div>
+                  <div class="d-flex justify-content-center mt-3">
+                    <p class="text-temperatura-g d-flex justify-content-center">13</p>
+                    <p class="text-graus">°C</p>
+                  </div>
+                </div>
+
+                <div class="col-4 p-0 pr-3">
+                  <div class="row align-items-center justify-content-end mr-3">
+                    <img src="assets/indicador-cima.svg" alt="indicador" />
+                    <p class="text-min-max ml-2">MAX</p>
+                  </div>
+                  <div class="d-flex justify-content-end mt-3">
+                    <p class="text-temperatura-g d-flex justify-content-center">26</p>
+                    <p class="text-graus">°C</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-between mt-5">
+                <div class="col-2 p-0">
+                  <img src="assets/indicador-mm.svg" alt="indicador mm" />
+                  <p class="text-info-p mt-2">30mm</p>
+                </div>
+
+                <div class="col-2 p-0">
+                  <img src="assets/indicador-porcentagem.svg" alt="indicador porcentagem" />
+                  <p class="text-info-p mt-2">62%</p>
+                </div>
+
+                <div class="col-2 p-0">
+                  <img src="assets/indicador-velocidade-vento.svg" alt="indicador de vento" />
+                  <p class="text-info-p mt-2">SE 17km/h</p>
+                </div>
+
+                <div class="col-2 p-0">
+                  <img src="assets/sol-nascendo.svg" alt="icone sol nascendo" />
+                  <p class="text-info-p mt-2">06h02</p>
+                </div>
+
+                <div class="col-2 p-0">
+                  <img src="assets/por-do-sol.svg" alt="icone por do sol" />
+                  <p class="text-info-p mt-2">18h05</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="card-superior-direito" class="col-cadastre">
+          <div class="h-100 d-flex flex-column justify-content-center">
+            <p class="text-cadastre px-5 py-3">Cadastre e receba a previsão de chuvas de até 7 meses.</p>
+            <button class="btn-cadastre text-black-default mt-1 p-3 mx-3" id="btn-text-color">Cadastre-se</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-between mt-5">
+        <div class="cards-inferiores border-container bg-white">
+          <div class="row align-items-center ml-2">
+            <img src="assets/tempo-de-sol.svg" alt="tempo de sol" />
+            <div class="col-9 p-0 ml-2">
+              <p class="text-black-default">TERÇA-FEIRA</p>
+              <p class="text-data">20/03/2020</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="d-flex align-items-center col-6">
+              <img src="assets/indicador-baixo.svg" width="10" height="8" alt="indicador pra baixo" />
+              <div class="d-flex justify-content-end ml-1">
+                <p class="text-graus-md d-flex justify-content-center">15</p>
+                <p class="text-graus-p">°C</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center col-6">
+              <img src="assets/indicador-cima.svg" width="10" height="8" alt="indicador pra cima" />
+              <div class="d-flex justify-content-end ml-1">
+                <p class="text-graus-md d-flex justify-content-center">26</p>
+                <p class="text-graus-p">°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-4 p-0 d-flex flex-column justify-content-end align-items-center">
+              <img src="assets/indicador-mm.svg" alt="indicador mm" />
+              <p class="text-info-p mt-2">30mm</p>
+            </div>
+
+            <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/indicador-porcentagem.svg" alt="indicador porcentagem" />
+              <p class="text-info-p mt-2">62%</p>
+            </div>
+
+            <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/indicador-velocidade-vento.svg" alt="indicador de vento" />
+              <p class="text-info-p mt-2">SE 17km/h</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-around">
+            <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/sol-nascendo.svg" alt="icone sol nascendo" />
+              <p class="text-info-p mt-2">06h02</p>
+            </div>
+
+            <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/por-do-sol.svg" alt="icone por do sol" />
+              <p class="text-info-p mt-2">18h05</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-inferiores border-container bg-white">
+          <div class="row align-items-center ml-2">
+            <img src="assets/indicador-de-nuvens.svg" alt="indicador de chuva" />
+            <div class="col-9 p-0 ml-2">
+              <p class="text-black-default">QUARTA-FEIRA</p>
+              <p class="text-data">21/03/2020</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="d-flex align-items-center col-6">
+              <img src="assets/indicador-baixo.svg" width="10" height="8" alt="indicador pra baixo" />
+              <div class="d-flex justify-content-end ml-1">
+                <p class="text-graus-md d-flex justify-content-center">11</p>
+                <p class="text-graus-p">°C</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center col-6">
+              <img src="assets/indicador-cima.svg" width="10" height="8" alt="indicador pra cima" />
+              <div class="d-flex justify-content-end ml-1">
+                <p class="text-graus-md d-flex justify-content-center">22</p>
+                <p class="text-graus-p">°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-4 p-0 d-flex flex-column justify-content-end align-items-center">
+              <img src="assets/indicador-mm.svg" alt="indicador mm" />
+              <p class="text-info-p mt-2">30mm</p>
+            </div>
+
+            <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/indicador-porcentagem.svg" alt="indicador porcentagem" />
+              <p class="text-info-p mt-2">62%</p>
+            </div>
+
+            <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/indicador-velocidade-vento.svg" alt="indicador de vento" />
+
+              <p class="text-info-p mt-2">SE 17km/h</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-around">
+            <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/sol-nascendo.svg" alt="icone sol nascendo" />
+              <p class="text-info-p mt-2">06h02</p>
+            </div>
+
+            <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/por-do-sol.svg" alt="icone por do sol" />
+              <p class="text-info-p mt-2">18h05</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-inferiores border-container bg-white">
+          <div class="row align-items-center ml-2">
+            <img src="assets/indicador-de-chuva.svg" alt="indicador de chuva" />
+            <div class="col-9 p-0 ml-2">
+              <p class="text-black-default">QUINTA</p>
+              <p class="text-data">22/03/2020</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="d-flex align-items-center col-6">
+              <img src="assets/indicador-baixo.svg" width="10" height="8" alt="indicador pra baixo" />
+              <div class="d-flex justify-content-end ml-1">
+                <p class="text-graus-md d-flex justify-content-center">13</p>
+                <p class="text-graus-p">°C</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center col-6">
+              <img src="assets/indicador-cima.svg" width="10" height="8" alt="indicador pra cima" />
+              <div class="d-flex justify-content-end ml-1">
+                <p class="text-graus-md d-flex justify-content-center">25</p>
+                <p class="text-graus-p">°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-4 p-0 d-flex flex-column justify-content-end align-items-center">
+              <img src="assets/indicador-mm.svg" alt="indicador mm" />
+              <p class="text-info-p mt-2">30mm</p>
+            </div>
+
+            <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/indicador-porcentagem.svg" alt="indicador porcentagem" />
+              <p class="text-info-p mt-2">62%</p>
+            </div>
+
+            <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/indicador-velocidade-vento.svg" alt="indicador de vento" />
+
+              <p class="text-info-p mt-2">SE 17km/h</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-around">
+            <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/sol-nascendo.svg" alt="icone sol nascendo" />
+              <p class="text-info-p mt-2">06h02</p>
+            </div>
+
+            <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/por-do-sol.svg" alt="icone por do sol" />
+              <p class="text-info-p mt-2">18h05</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-inferiores border-container bg-white">
+          <div class="row align-items-center ml-2">
+            <img src="assets/tempo-de-sol.svg" alt="tempo pra sol" />
+            <div class="col-9 p-0 ml-2">
+              <p class="text-black-default">SEXTA-FEIRA</p>
+              <p class="text-data">23/03/2020</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="d-flex align-items-center col-6">
+              <img src="assets/indicador-baixo.svg" width="10" height="8" alt="indicador pra baixo" />
+              <div class="d-flex justify-content-end ml-1">
+                <p class="text-graus-md d-flex justify-content-center">18</p>
+                <p class="text-graus-p">°C</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center col-6">
+              <img src="assets/indicador-cima.svg" width="10" height="8" alt="indicador pra cima" />
+              <div class="d-flex justify-content-end ml-1">
+                <p class="text-graus-md d-flex justify-content-center">27</p>
+                <p class="text-graus-p">°C</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-4 p-0 d-flex flex-column justify-content-end align-items-center">
+              <img src="assets/indicador-mm.svg" alt="indicador mm" />
+              <p class="text-info-p mt-2">30mm</p>
+            </div>
+
+            <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/indicador-porcentagem.svg" alt="indicador porcentagem" />
+              <p class="text-info-p mt-2">62%</p>
+            </div>
+
+            <div class="col-4 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/indicador-velocidade-vento.svg" alt="indicador de vento" />
+
+              <p class="text-info-p mt-2">SE 17km/h</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-around">
+            <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/sol-nascendo.svg" alt="icone sol nascendo" />
+              <p class="text-info-p mt-2">06h02</p>
+            </div>
+
+            <div class="col-3 p-0 d-flex flex-column justify-content-center align-items-center">
+              <img src="assets/por-do-sol.svg" alt="icone por do sol" />
+              <p class="text-info-p mt-2">18h05</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

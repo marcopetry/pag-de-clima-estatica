@@ -1,0 +1,180 @@
+body {
+  background-color: #e5e5e5 !important;
+  font-family: Roboto !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.container-main {
+  padding: 5rem 12rem;
+  max-width: 1110px !important;
+  padding: 5rem 0 !important;
+}
+
+#container-superior {
+  width: 849px !important;
+  height: 404px !important;
+}
+
+#card-superior-direito {
+  width: 260px !important;
+  height: 402px !important;
+}
+
+.cards-inferiores {
+  width: 263px !important;
+  height: 264px !important;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.border-container {
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  box-shadow: -20px 60 rgba(217, 217, 217, 0.2); /*ver isso depois*/
+  border-radius: 4px;
+}
+
+.container-publicidade {
+  background-color: #f2f2f2 !important;
+}
+
+.text-publicidade {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.container-tempo {
+  background-color: rgba(25, 170, 227, 0.1);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 23px;
+  color: #19aae3;
+}
+
+.text-medium {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  font-style: normal;
+}
+
+.text-data {
+  line-height: 23px;
+  color: #b2b2b2;
+  font-size: 12px;
+}
+
+.text-min-max {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.text-temperatura-g {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 36px;
+  font-style: normal;
+  font-family: Roboto;
+  color: #343731;
+}
+
+.text-black-default {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #343731;
+}
+
+#text-cidade {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: rgba(52, 55, 49, 0.2);
+}
+
+.text-info-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #343731;
+}
+
+.text-graus-md {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+#intervalo-data {
+  font-size: 16px;
+}
+
+.hr-vertical {
+  border: none;
+  border-left: 1px solid #ececec;
+}
+
+.col-cadastre {
+  background: #19aae3;
+  border-radius: 3px;
+  background-image: url('assets/fundo-cadastre.svg');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.text-cadastre {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn-cadastre {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: none;
+}
+
+#btn-text-color {
+  color: white;
+}
+
+.text-graus {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #343731;
+}
+
+.text-graus-p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 36px;
+}
